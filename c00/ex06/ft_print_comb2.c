@@ -6,7 +6,7 @@
 /*   By: tiagrossin <marvin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 21:12:08 by tiagrossi         #+#    #+#             */
-/*   Updated: 2024/07/31 12:37:34 by tiagrossi        ###   ########.fr       */
+/*   Updated: 2024/08/01 12:44:59 by tiagrossi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,8 +56,8 @@ void	ft_print_comb2(void)
 	write(1, "\n", 1);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	ft_print_comb2();
 	return (0);
-}
+}*/
