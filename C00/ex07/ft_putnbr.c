@@ -31,9 +31,3 @@ void	ft_putnbr(int nb)
 	digit = (nb % 10) + '0';
 	write (1, &digit, 1);
 }
-
-/*int	main(void)
-{
-	ft_putnbr(-1997);
-	return (0);
-}*/

@@ -48,15 +48,9 @@ void	ft_print_comb2(void)
 			write(1, " ", 1);
 			ft_putnum(j);
 			if (i != 98)
-					 write(1, ", ", 2);
+				write(1, ", ", 2);
 			j++;
 		}
 		i++;
 	}
 }
-
-/*int	main(void)
-{
-	ft_print_comb2();
-	return (0);
-}*/
