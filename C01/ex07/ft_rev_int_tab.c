@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tiagrossin <marvin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/06 11:47:18 by tiagrossi         #+#    #+#             */
-/*   Updated: 2024/08/06 11:47:24 by tiagrossi        ###   ########.fr       */
+/*   Created: 2024/08/07 12:55:35 by tiagrossi         #+#    #+#             */
+/*   Updated: 2024/08/07 12:55:44 by tiagrossi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+void	ft_rev_int_tab(int *tab, int size)
 {
 	int	i;
+	int	temp;
 
 	i = 0;
-	while (*str++)
+	while  (i < size / 2)
+	{
+		temp = tab[(size - 1) - i];
+		tab[(size - 1) - i] = tab[i];
+		tab[i] = temp;
 		i++;
-	return (i);
+	}
 }
