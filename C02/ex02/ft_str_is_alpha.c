@@ -12,7 +12,7 @@
 
 int	ft_str_is_alpha(char *str)
 {
-	while (*str && ((*str >= 'A' && *str <= 'Z') || (*str >= 'a' && *str <= 'z')))
+	while ((*str >= 'A' && *str <= 'Z') || (*str >= 'a' && *str <= 'z'))
 		str++;
 	return (*str == '\0');
 }
