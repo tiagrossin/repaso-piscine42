@@ -12,8 +12,8 @@
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	char	*ptr;
-	unsigned int i;
+	char			*ptr;
+	unsigned int	i;
 
 	ptr = dest;
 	i = 0;
