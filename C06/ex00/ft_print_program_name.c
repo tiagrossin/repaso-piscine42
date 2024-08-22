@@ -1,26 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
+/*   ft_print_program_name.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tiagrossin <marvin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/07 12:55:35 by tiagrossi         #+#    #+#             */
-/*   Updated: 2024/08/07 12:55:44 by tiagrossi        ###   ########.fr       */
+/*   Created: 2024/08/22 15:59:12 by tiagrossi         #+#    #+#             */
+/*   Updated: 2024/08/22 15:59:16 by tiagrossi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_rev_int_tab(int *tab, int size)
-{
-	int	i;
-	int	temp;
+#include <unistd.h>
 
-	i = 0;
-	while (i < size / 2)
+int	main(int argc, char	**argv)
+{
+	(void)argc;
+	while (*argv[0])
 	{
-		temp = tab[(size - 1) - i];
-		tab[(size - 1) - i] = tab[i];
-		tab[i] = temp;
-		i++;
+		write (1, &*argv[0], 1);
+		argv[0]++;
 	}
+	write (1, &"\n", 1);
 }
