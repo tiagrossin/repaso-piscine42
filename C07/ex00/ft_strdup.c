@@ -14,12 +14,10 @@
 
 int	ft_strlen(char *str)
 {
-	char	*ptr;
 	int	i;
 
-	ptr = str;
 	i = 0;
-	while (*ptr++)
+	while (*str++)
 		i++;
 	return (i);
 }
