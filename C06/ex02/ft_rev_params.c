@@ -14,8 +14,8 @@
 
 int	main(int argc, char	**argv)
 {
-	int i;
-	char *arg;
+	int		i;
+	char	*arg;
 
 	i = argc - 1;
 	while (i > 0)
@@ -29,5 +29,5 @@ int	main(int argc, char	**argv)
 		write (1, "\n", 1);
 		i--;
 	}
-	write (1, &"\n", 1);
+	write (1, "\n", 1);
 }
